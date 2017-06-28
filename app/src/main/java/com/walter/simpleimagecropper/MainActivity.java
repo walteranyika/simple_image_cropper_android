@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
            e.printStackTrace();
         }
 
-        client.post("http://192.168.0.32/uploads/upload.php", params, new TextHttpResponseHandler() {
+        client.post("http://192.168.0.70/uploads/upload.php", params, new TextHttpResponseHandler() {
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 Log.d("RESPONSE", "Failed To Load "+statusCode);
